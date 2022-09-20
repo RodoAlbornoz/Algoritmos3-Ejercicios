@@ -1,0 +1,9 @@
+*¿Qué crítica le harías al protocolo de #estaHerido y #noEstaHerido? (en vez de tener solo el mensaje #estaHerido y hacer “#estaHerido not” para saber la negación)?
+A nuestro parecer es mejor el protocolo de #estaHerido y #noEstaHerido que tener un solo mensaje, porque en #estaHerido not estaría considerando el caso en que el combatiente presente puntos mayores a 20 lo cual se encuentra fuera de los límites de nuestro modelo.
+
+*¿Qué opinan de que para algunas funcionalidades tenemos 3 tests para el mismo comportamiento pero aplicando a cada uno de los combatientes (Arthas, Mankrik y Olgra)?
+Consideramos que es correcto tener 3 tests para el mismo comportamiento, porque tener el mismo comportamiento no significa que las funcionalidades internamente funcionen correctamente, o lleguen al resultado de la forma que esperamos.
+
+*¿Cómo modelaron el resultado de haber desarrollado un combate? ¿qué opciones consideraron y por qué se quedaron con la que entregaron y por qué descartaron a las otras?
+Modelamos el resultado del combate como un colaborador interno en OrquestadorDeCombates que toma como valor el bando ganador e ‘indeterminado’ si no hay bando ganador. Otra opción que consideramos fue la de utilizar strings en caso de que haya un ganador, pero lo descartamos porque nos parecía más claro poner directamente el bando.
+te parece bien eso?
